@@ -1,0 +1,39 @@
+[package]
+name = "tiny-card-app"
+version = "0.1.0"
+authors = ["jaankaup"]
+edition = "2021"
+resolver = "2" 
+default-run = "tiny-card-app"
+publish = false
+
+# [workspace]
+# members = ["gui-components", "mtg-core", "general"]
+
+[lib]
+
+# [features]
+
+[[bin]]
+name = "tiny-card-app"
+path = "src/bin/app/main.rs"
+
+[dependencies]
+dioxus = "0.4"
+dioxus-desktop = "0.4"
+dioxus-html = "0.4"
+# serde = "1.0.152"
+# serde-xml-rs = "0.6.0"
+# strong-xml = "0.6.3"
+hard-xml = "1.27.0"
+# rand = { version = "0.8.5" }
+# toml = "0.7.1"
+# futures-util = { version = "0.3", default-features = false }
+
+[profile.dev]
+opt-level = 3
+debug = true
+
+[profile.release]
+opt-level = 3
+debug = false
