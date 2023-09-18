@@ -4,7 +4,7 @@ version = "0.1.0"
 authors = ["jaankaup"]
 edition = "2021"
 resolver = "2" 
-default-run = "tiny-card-app"
+default-run = "tiny-card-example"
 publish = false
 
 # [workspace]
@@ -15,7 +15,7 @@ publish = false
 # [features]
 
 [[bin]]
-name = "tiny-card-app"
+name = "tiny-card-example"
 path = "src/bin/app/main.rs"
 
 [dependencies]
